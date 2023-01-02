@@ -1,0 +1,23 @@
+@use "./variables" as *;
+@use "./typography" as *;
+@use "./mixins" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "AvenirNext";
+    font-size: 1.6rem;
+    margin: 0;
+
+    @include desktop {
+        margin: 0 auto;
+    }
+}
