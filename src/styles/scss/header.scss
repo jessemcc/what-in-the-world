@@ -1,16 +1,11 @@
 @use "../partials/variables" as *;
 @use "../partials/mixins" as *;
 
-a {
-    text-decoration: none;
-    color: $light-mode-text;
-}
-
 .header {
     margin: 0 auto;
     padding: 2.5rem 1.5rem;
     box-shadow: 0 0.25rem hsl(0, 0%, 93%);
-    @include flex (initial, space-between, center, nowrap);
+    @include flex(initial, space-between, center, nowrap);
     background-color: white;
     font-size: 1.2rem;
 
@@ -20,6 +15,7 @@ a {
     }
 
     @include desktop {
+        font-size: 1.8rem;
         padding: 2.5rem 8rem;
     }
 
