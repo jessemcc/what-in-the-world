@@ -16,8 +16,6 @@ body {
     font-family: "NunitoSans";
     font-size: 1.6rem;
     margin: 0;
-
-    @include desktop {
-        margin: 0 auto;
-    }
+    color: $light-mode-text;
+    background-color: $light-mode-background;
 }
